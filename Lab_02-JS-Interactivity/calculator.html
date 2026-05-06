@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🧮 Smart Interactive Calculator</h1>
+
+        <div class="calculator-card">
+
+            <div class="input-group">
+                <input type="number" id="num1" placeholder="Enter First Number">
+                <input type="number" id="num2" placeholder="Enter Second Number">
+            </div>
+
+            <div class="input-group">
+                <select id="operation">
+                    <option value="">Select Operation</option>
+                    <option value="add">➕ Addition</option>
+                    <option value="sub">➖ Subtraction</option>
+                    <option value="mul">✖ Multiplication</option>
+                    <option value="div">➗ Division</option>
+                </select>
+            </div>
+
+            <button onclick="calculate()">Calculate</button>
+
+            <div id="result" class="result-box"></div>
+
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+</html>

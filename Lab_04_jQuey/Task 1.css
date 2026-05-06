@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #8585f5 0%, #16213e 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+/* --- The Top Heading Styling --- */
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dynamic-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.dynamic-title span {
+    display: block;
+    font-size: 1rem;
+    color: #94a3b8;
+    -webkit-text-fill-color: #94a3b8; /* Resetting gradient for subtitle */
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.status-badge {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 4px 12px;
+    background: rgba(79, 172, 254, 0.1);
+    border: 1px solid rgba(79, 172, 254, 0.3);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: #4facfe;
+}
+
+/* --- Card & List Styling --- */
+.app-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    background: rgba(9, 9, 9, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: white;
+    outline: none;
+}
+
+input:focus { border-color: #f6f8f6; }
+
+button#addBtn {
+    background: #4facfe;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button#addBtn:hover { transform: scale(1.05); background: #12eb68; }
+
+li {
+    background: rgba(76, 83, 208, 0.03);
+    margin-bottom: 10px;
+    padding: 14px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+/* HOVER HIGHLIGHT GOAL */
+li:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(79, 172, 254, 0.5);
+    transform: translateX(5px);
+}
+
+.delete-btn {
+    background: rgba(255, 71, 87, 0.1);
+    color: #ff4757;
+    border: 1px solid #ff4757;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    background: #ff4757;
+    color: white;
+}

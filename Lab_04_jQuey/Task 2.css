@@ -1,0 +1,78 @@
+/* Reuse the core styling from Task 1 for consistency */
+body {
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.gallery-wrapper { width: 100%; max-width: 600px; padding: 20px; }
+
+.gallery-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+.image-viewport {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #000;
+}
+
+#galleryImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out; /* The Fade Effect */
+}
+
+/* Class to trigger fade out */
+.fade-out { opacity: 0; }
+
+.caption-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 20px;
+    text-align: center;
+}
+
+#caption {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: transform 0.4s ease;
+}
+
+.nav-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #4facfe;
+    border-color: #4facfe;
+    transform: translateY(-2px);
+}

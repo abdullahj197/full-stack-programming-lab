@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1> JavaScript Smart Quiz</h1>
+
+        <div class="quiz-card">
+
+            <div class="question">
+                <p>1️⃣ What is 10 + 5?</p>
+                <input type="text" id="q1" placeholder="Enter your answer">
+            </div>
+
+            <div class="question">
+                <p>2️⃣ What is the capital of Pakistan?</p>
+                <input type="text" id="q2" placeholder="Enter your answer">
+            </div>
+
+            <div class="question">
+                <p>3️⃣ What color is the sky?</p>
+                <input type="text" id="q3" placeholder="Enter your answer">
+            </div>
+
+            <div class="buttons">
+                <button class="submit-btn" onclick="calculateScore()">Submit Quiz</button>
+                <button class="reset-btn" onclick="resetQuiz()">Reset</button>
+            </div>
+
+            <div id="result" class="result-box"></div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

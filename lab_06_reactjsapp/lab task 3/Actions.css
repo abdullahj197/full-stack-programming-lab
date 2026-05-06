@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.btn-group button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #0984e3;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-group button:hover {
+  background: #0652dd;
+  transform: scale(1.05);
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+}

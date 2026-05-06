@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a; /* Deep Slate Blue */
+    color: #f8fafc;
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+.lab-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    gap: 40px;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 250px;
+    position: sticky;
+    top: 50px;
+    height: fit-content;
+}
+
+.side-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+#tabGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tab-link {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    text-align: left;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-left: 2px solid #334155;
+    transition: 0.3s;
+}
+
+.tab-link:hover {
+    color: #f8fafc;
+    border-left-color: #38bdf8;
+}
+
+.tab-link.active {
+    color: #38bdf8;
+    border-left-color: #38bdf8;
+    background: rgba(56, 189, 248, 0.05);
+}
+
+/* Content Area */
+.content-area {
+    flex: 1;
+    padding-bottom: 80vh; /* Allows last item to scroll to top */
+}
+
+.content-box {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px solid #334155;
+    
+    /* THE FIX: Prevents the header from being cut off */
+    scroll-margin-top: 50px; 
+    
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0.5;
+}
+
+.content-box.active {
+    opacity: 1;
+    transform: scale(1.02);
+    border-color: #38bdf8;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}

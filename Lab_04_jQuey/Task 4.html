@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabbed Content Lab</title>
+    <link rel="stylesheet" href="Task 4.css">
+</head>
+<body>
+
+    <div class="lab-container">
+        <div class="sidebar">
+            <h1 class="side-title">Navigation</h1>
+            <nav id="tabGroup">
+                <button class="tab-link active" data-target="sec1">01. Overview</button>
+                <button class="tab-link" data-target="sec2">02. Features</button>
+                <button class="tab-link" data-target="sec3">03. Statistics</button>
+                <button class="tab-link" data-target="sec4">04. Contact</button>
+            </nav>
+        </div>
+
+        <main class="content-area">
+            <section id="sec1" class="content-box">
+                <h2>Project Overview</h2>
+                <p>This section stops exactly where it should thanks to the scroll-margin property. No more cutting off headers!</p>
+            </section>
+
+            <section id="sec2" class="content-box">
+                <h2>Key Features</h2>
+                <p>Dynamic DOM manipulation allows us to toggle classes and trigger animations based on user interaction.</p>
+            </section>
+
+            <section id="sec3" class="content-box">
+                <h2>Usage Statistics</h2>
+                <p>Real-time data tracking and smooth transitions provide a high-end feel to simple web components.</p>
+            </section>
+
+            <section id="sec4" class="content-box">
+                <h2>Get In Touch</h2>
+                <p>Reach out for more laboratory experiments or technical documentation support.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="Task 4.js"></script>
+</body>
+</html>

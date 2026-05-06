@@ -1,0 +1,45 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.navbar {
+  background: #2d3436;
+  padding: 15px;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.page {
+  padding: 20px;
+}
+
+.form input, .form textarea {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  padding: 8px 15px;
+  background: #0984e3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-list {
+  display: flex;
+  gap: 15px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 200px;
+}

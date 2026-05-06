@@ -1,0 +1,57 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* New purple-blue gradient */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.cart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.cart-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.cart-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.cart-card p {
+    font-size: 15px;
+    margin: 6px 0;
+}

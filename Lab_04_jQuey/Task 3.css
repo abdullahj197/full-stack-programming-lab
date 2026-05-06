@@ -1,0 +1,85 @@
+:root {
+    --bg: #f3f4f6;
+    --accent: #7c3aed;
+    --error: #ef4444;
+    --text: #1f2937;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Courier New', Courier, monospace; /* Techy, lab feel */
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.main-container { width: 400px; }
+
+.top-title {
+    font-size: 1.5rem;
+    border-bottom: 4px solid var(--text);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.flat-form {
+    background: white;
+    padding: 30px;
+    border: 3px solid var(--text);
+    box-shadow: 8px 8px 0px var(--text); /* Neo-brutalism shadow */
+}
+
+.field-wrapper { margin-bottom: 20px; }
+
+label { display: block; font-weight: bold; margin-bottom: 5px; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--text);
+    font-size: 1rem;
+    outline: none;
+    transition: 0.2s;
+}
+
+/* Error state styling */
+input.input-error {
+    border-color: var(--error);
+    background-color: #fff1f2;
+}
+
+.error-text {
+    color: var(--error);
+    font-size: 0.8rem;
+    margin-top: 5px;
+    font-weight: bold;
+    min-height: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--accent);
+    color: white;
+    border: 2px solid var(--text);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px var(--text);
+}
+
+button:active {
+    box-shadow: 0px 0px 0px var(--text);
+    transform: translate(2px, 2px);
+}
+
+.success-banner {
+    background: #dcfce7;
+    border: 3px solid #166534;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hidden { display: none; }
