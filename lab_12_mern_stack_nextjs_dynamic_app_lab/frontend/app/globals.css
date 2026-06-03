@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+:root {
+  --primary: #f97316; /* orange-500 */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
